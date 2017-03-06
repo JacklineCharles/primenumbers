@@ -12,15 +12,15 @@ class Primenumberstest(unittest.TestCase):
         self.assertIn(4, result)
 
     def test_length_of_list_less_than_n(self):
-        self.assertLess(len(primes(9)), 9)
+        self.assertLess(len(primes(10)), 10)
    
 
-    def test_seventy_two_is_not_a_prime_number(self):
+    def test_sixty_two_is_not_a_prime_number(self):
         result = primes(65)
         self.assertNotIn(62, result)
 
     def test_output_is_a_list(self):
-        result = primes(43)
+        result = primes(53)
         result = isinstance(result, list)
         self.assertTrue(result)
 
