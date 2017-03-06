@@ -15,13 +15,9 @@ class Primenumberstest(unittest.TestCase):
         self.assertLess(len(primes(9)), 9)
    
 
-    def test_sixty_seven_is_a_prime(self):
-        result = primes(97)
-        self.assertIn(67, result)
-
     def test_seventy_two_is_not_a_prime_number(self):
-        result = primes(75)
-        self.assertNotIn(72, result)
+        result = primes(65)
+        self.assertNotIn(62, result)
 
     def test_output_is_a_list(self):
         result = primes(43)
