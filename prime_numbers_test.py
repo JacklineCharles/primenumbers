@@ -8,8 +8,8 @@ class Primenumberstest(unittest.TestCase):
         self.assertNotIn(6, result)
 
     def test_two_is_a_prime_number(self):
-        result = primes(9)
-        self.assertIn(2, result)
+        result = primes(19)
+        self.assertIn(4, result)
 
     def test_length_of_list_less_than_n(self):
         self.assertLess(len(primes(9)), 9)
@@ -29,7 +29,7 @@ class Primenumberstest(unittest.TestCase):
         self.assertNotIn(1, result)
 
     def test_return_empty_list_if_n_is_negative(self):
-        result = primes(-3)
+        result = primes(-1)
         self.assertListEqual([],result)
 
     def test_raise_error_if_input_is_not_integer(self):
